@@ -12,7 +12,7 @@ app.use('/posts', posts);
 // For all requests return always the index
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'dist/angular-node/index.html'))
-  });
+});
 
 const port = process.env.port || 4600
 app.listen(port, (req, res) => {
