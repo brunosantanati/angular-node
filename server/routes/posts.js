@@ -10,8 +10,12 @@ router.get('/', (req, res) => {
     //res.send('POST WORKS');
 
     axios.get(`${postAPI}/posts`).then(posts => {
-        console.log(posts.data);
-    });
+
+        res.status(200).json(posts.data);
+
+    }).catch(error => {
+        res.status(500).send(error);
+    })
 
 });
 
