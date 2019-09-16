@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PostsComponent } from './posts/posts.component';
 import { RouterModule, ROUTES } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { PostsService } from './posts.service';
 
 const Routes = [
   {
@@ -29,7 +30,7 @@ const Routes = [
     RouterModule.forRoot(Routes),
     HttpClientModule
   ],
-  providers: [],
+  providers: [PostsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

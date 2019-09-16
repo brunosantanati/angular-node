@@ -5,7 +5,6 @@ import { PostsService } from '../posts.service';
   selector: 'app-posts',
   templateUrl: './posts.component.html',
   styleUrls: ['./posts.component.css'],
-  providers: [PostsService]
 })
 export class PostsComponent implements OnInit {
 

@@ -6,6 +6,10 @@ const postAPI = 'https://jsonplaceholder.typicode.com';
 
 // GET POST
 router.get('/', (req, res) => {
+    res.send('it works');
+});
+
+router.get('/posts', (req, res) => {
     
     //res.send('POST WORKS');
 
