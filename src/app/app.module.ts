@@ -11,15 +11,15 @@ import { ContactComponent } from './contact/contact.component';
 
 const Routes = [
   {
-    path: '',
+    path: 'contact', component: ContactComponent
+  },
+  {
+    path: '**',
     redirectTo: 'posts',
     pathMatch: 'full'
   },
   {
     path: 'posts', component: PostsComponent
-  },
-  {
-    path: 'contact', component: ContactComponent
   }
 ];
 

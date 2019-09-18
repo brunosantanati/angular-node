@@ -23,4 +23,8 @@ router.get('/posts', (req, res) => {
 
 });
 
+router.get('*', (req, res) => {
+    res.redirect('/routes/posts')
+});
+
 module.exports = router;
